@@ -1,5 +1,12 @@
+### Overview
+It's a simple Counter program based on Anchor framework, but it demonstrates key concepts, like: 
+- **Account Management**: Creating and managing program-owned accounts
+- **State Management**: Storing and updating on-chain state
+- **Instruction Processing**: Handling different program instructions
+- **Testing**: Comprehensive (Typescript based) testing of Solana programs
 
-How did we reach here ? :)
+### Setup 
+Follow instructions at https://www.anchor-lang.com/docs/quickstart/local
 - `anchor init solana-anchor-counter` (initial project created)
 
 First, we need to fix `anchor build` error for `rustc 1.79.0-dev`
@@ -9,19 +16,18 @@ First, we need to fix `anchor build` error for `rustc 1.79.0-dev`
 bytemuck = { version = "1.13.1", features = ["derive"] }
 bytemuck_derive = "=1.8.0"
 ```
-This should fix (`bytemuck_derive`)  error: rustc 1.79.0-dev is not supported by the following package:`
+This should fix `bytemuck_derive` error: `rustc 1.79.0-dev is not supported by the following package:`
 - Now run `anchor build`, it should pass
 
-### TypeScript setup
-- yarn install
+- `yarn install` (install relevant npm modules)
 
-Run `./run_tests.sh` (it will start a FRESH validator with clean state (empty ledger directory), followed by 
+Next, simply run `./run_tests.sh` (it will start a FRESH validator with clean state (empty ledger directory), followed by 
 - `anchor build` 
 - `anchor deploy`
 - & finally running all tests
 
 ```aiignore
-./run_tests.sh
+% ./run_tests.sh
 Stopping any running validators...
 Removing ledger directory...
 Starting fresh validator...
