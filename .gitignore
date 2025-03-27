@@ -1,0 +1,27 @@
+# Build output
+/target/
+/dist/
+/build/
+/node_modules/
+/.anchor/
+
+# IDE and editor files
+.idea/
+.vscode/
+.anchor
+.DS_Store
+.yarn
+
+# Solana validator ledger
+test-ledger/
+ledger/
+
+# Dependency directories
+.yarn/
+.pnp.*
+
+# Typescript
+*.tsbuildinfo
+.eslintcache
+
+
