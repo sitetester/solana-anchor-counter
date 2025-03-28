@@ -3,7 +3,7 @@ It's a simple Counter program based on Anchor framework, but it demonstrates key
 - **Account Management**: Creating and managing program-owned accounts
 - **State Management**: Storing and updating on-chain state
 - **Instruction Processing**: Handling different program instructions
-- **Testing**: Comprehensive (Typescript based) testing of Solana programs
+- **Testing**: Comprehensive (Typescript based) testing
 
 ### Setup 
 Follow instructions at https://www.anchor-lang.com/docs/quickstart/local
