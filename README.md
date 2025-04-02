@@ -1,6 +1,6 @@
 ### Overview
 It's a simple Counter program based on Anchor framework, but it demonstrates key concepts, like: 
-- **Account Management**: Creating and managing program-owned accounts
+- **Account Management**: Creating and managing program-owned accounts (PDAs)
 - **State Management**: Storing and updating on-chain state
 - **Instruction Processing**: Handling different program instructions
 - **Testing**: Comprehensive (Typescript based) testing
